@@ -1,6 +1,37 @@
-## This is where your Laravel app goes
+## Laravel 5.6 + Vue.js - Simple CRUD Demo
 
-To get started, delete this file and then do one of the following:
+Simple project showing how Laravel works with Vue.js.
 
-- Clone your project or copy all of the files directly into this `src` directory.
-- Spin up the Docker network by following the instructions on the main [README.md](../README.md), and install a brand new Laravel project by running `docker-compose run --rm composer create-project laravel/laravel .` in your terminal.
+One CRUD operation to manage Companies - create/edit/update/delete.
+
+![Laravel + Vue.js](https://laraveldaily.com/wp-content/uploads/2018/11/laravel-vue.png)
+
+---
+
+### How to use
+
+- Clone the repository with __git clone__
+- Copy __.env.example__ file to __.env__ and edit database credentials there
+- Run __composer install__
+- Run __php artisan key:generate__
+- Run __php artisan migrate__
+- Run __php artisan passport:install__
+- Run __npm install__
+- Run __npm run dev__
+- That's it - load the homepage, use __Register__ link and use the CRUD
+
+---
+
+### License
+
+Please use and re-use however you want.
+
+---
+
+## More from our LaravelDaily Team
+
+- Check out our adminpanel generator [QuickAdminPanel](https://quickadminpanel.com)
+- Read our [Blog with Laravel Tutorials](https://laraveldaily.com)
+- FREE E-book: [50 Laravel Quick Tips (and counting)](https://laraveldaily.com/free-e-book-40-laravel-quick-tips-and-counting/)
+- Subscribe to our [YouTube channel Laravel Business](https://www.youtube.com/channel/UCTuplgOBi6tJIlesIboymGA)
+- Enroll in our [Laravel Online Courses](https://laraveldaily.teachable.com/)
