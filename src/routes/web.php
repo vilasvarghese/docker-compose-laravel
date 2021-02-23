@@ -1,5 +1,8 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PageController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,13 +15,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
-Auth::routes();
+   Route::get('index', 'PageController@index');
+   Route::post('index','PageController@create')->name('req');
+   Route::get('action', 'PageController@show')->name('act');
 
-Route::get('/home', 'HomeController@index')->name('home');
 
-Route::group(['middleware' => ['auth'], 'prefix' => 'admin', 'as' => 'admin.'], function () {
-    Route::get('companies', 'CompaniesController@index')->name('companies.index');
-});

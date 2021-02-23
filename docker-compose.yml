@@ -68,6 +68,7 @@ services:
     depends_on:
       - php
     user: laravel
+#    entrypoint: chown -R $USER ~/.composer/ && composer update
     entrypoint: ['composer', '--ignore-platform-reqs']
     networks:
       - laravel
@@ -78,7 +79,7 @@ services:
     volumes:
       - ./src:/var/www/html
     working_dir: /var/www/html
-    entrypoint: ['npm']
+    entrypoint: ['npm', 'install']
     networks:
       - laravel
 
