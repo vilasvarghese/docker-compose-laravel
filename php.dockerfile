@@ -22,6 +22,8 @@ RUN mkdir -p /var/www/html
 
 RUN chown laravel:laravel /var/www/html
 
+RUN chmod 777 -R /var/www/html
+
 WORKDIR /var/www/html
 
 RUN docker-php-ext-install pdo pdo_mysql
