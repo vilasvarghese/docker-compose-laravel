@@ -1,0 +1,10 @@
+Helpful commands
+----------------
+Execute the following inside php container
+  composer update
+  chmod 777 -R *
+ 
+Other commands that can hep
+---------------------------
+	php artisan key:generate
+	php artisan serve
